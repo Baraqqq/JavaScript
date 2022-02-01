@@ -1,0 +1,96 @@
+Kennisopdrachten
+1. Wat is Javascript?
+Het is een veel gebruikte script-taal om webpagina’s interactiever te maken.
+
+2. Waar gebruik je Javascript voor?
+Voor het maken van berekeningen, data manipuleren en valideren. 
+
+3. Wat betekent de zin “Javascript is a high-level programming language”?
+
+4. Wat is een webapplicatie?
+webapplicatie is een computerprogramma dat is uitgevoerd in de vorm van een interactieve website.
+
+5. Wat is de grootste update in Javascript en luidde het begin in van “Modern Javascript”?
+ES6 is de grootste update van javascript
+
+6. Hoe voeg je een Javascript-file toe aan je HTML-file?
+Om Javascript file toe tevoegen aan uw HTML-file typ aan het einde van je code <script type="text/javascript"> JAVA SCRIPT CODE </script>
+of je kan je html bestand linken met een javascript bestand. <script type="text/javascript" src="path-to-javascript-file.js"></script>
+
+7. Wat is een “value”?
+Meting van de waarde van een product of dienst
+
+8. Wat is een variabele?
+variabele is een manier om in Javascript veranderlijke gegevens te bewaren.
+
+9. Wat is een variabelenaam?
+
+10. Beantwoord de vragen 7, 8 en 9 middels een tekening waarin “value”, variabele en
+variabelenaam aangegeven worden.
+
+11. Wat is een conventie? Wat betekent dat? Wat betekent het voor programmeren in het
+algemeen en Javascript in het bijzonder?
+
+
+12. Wat is de juiste naamgeving voor de variabele?
+a. prachtigLeven
+b. PrachtigLeven
+c. prachtigleven
+d. Prachtigleven
+
+
+13. Welke naamgeving voor de variabele is niet syntactische correct?
+a. $helloworld
+b. helloworld
+c. 3hello
+d. hello_world
+
+
+14. Wat is een syntactische fout?
+15. Wat is een semantische fout?
+16. Leg het verschil uit tussen een syntactische en een semantische fout.
+17. Wat is een datatype? Geef twee voorbeelden van een datatype en leg uit wat deze zijn.
+18. Waarvoor gebruik je commentaar in je code? Noem drie voorbeelden met uitleg.
+19. Leg het verschil uit tussen console.log(“herder”) en console.log(herder).
+20. Wat is een “legacy problem”?
+
+21. Combineer de letters met de juiste cijfers.
+a. Waarde kan veranderen gedurende het uitvoeren van het script
+b. Waarde kan niet veranderen gedurende het uitvoeren van het script
+c. Niet meer gebruiken voor het declareren van variabelen.
+
+        1. const
+        2. var
+        3. let
+
+22. Is “const alfa;” legaal in Javascript? Waarom?
+23. Is “let beta;” legaal in Javascript? Waarom?
+24. Wat is een operator?
+25. Wat is het verschil tussen “=” en “==”?
+26. Wat verschijnt er in de console?
+
+27. Wat verschijnt er in de console?
+
+28. Wat verschijnt er in de console?
+
+29. Wat verschijnt er in de console?
+
+30. Wat verschijnt er in de console?
+
+31. Wat verschijnt er in de console?
+
+32. Wat verschijnt er in de console?
+
+33. Wat verschijnt er in de console?
+
+34. Wat verschijnt er in de console?
+
+35. Wat verschijnt er in de console?
+
+36. Wat verschijnt er in de console?
+
+37. Wat is “operator precedence”? Geef een voorbeeld met code waarbij je “precedence” in actie
+ziet.
+38. Wat is de “operator precedence” van “Addition”?
+39. Wat is de “operator precedence” van “void”?
+40. Welke operator wordt eerst uitgevoerd “conditional” of “assignment”?

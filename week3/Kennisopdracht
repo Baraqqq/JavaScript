@@ -1,0 +1,86 @@
+1. Wat is “strict mode” in Javascript?
+strict Mode brengt verschillende wijzigingen aan in de normale JavaScript-semantiek:
+
+2. Waar in je script moet je “strict mode” activeren?
+Wil je je hele script in strict mode dan boven de code "use strict"; typen.
+
+3. Waarom zou je “strict mode” in Javascript activeren?
+
+
+4. Wat is een functie?
+
+
+5. Wat is het verschil tussen een variabele en een functie?
+een Functie voert taken uit of berekent taken en variable slaat gegevens op.
+
+6. Wat is de “function body”? Geef een codevoorbeeld bij je uitleg.
+
+
+7. Kies de juiste beschrijving bij het nummer.
+a. Function Call / Running the function / Invoking the function
+b. Keyword
+c. Naam van de functie
+d. Parameter (van de functie)
+e. Body (van de functie)
+
+8. Wat verschijnt er in de console?
+Om te lachen
+
+9. Wat verschijnt er in de console?
+Om 2 keer te lachen
+
+10. Wat verschijnt er in de console?
+Om 3 keer te lachen
+
+11. Wat verschijnt er in de console?
+ 3 knuffels
+
+12. Wat verschijnt er in de console?
+- 12 knuffels knuffels
+
+13. Wat verschijnt er in de console?
+1 knuffel
+14. Wat verschijnt er in de console?
+
+15. Wat verschijnt er in de console?
+
+16. Wat verschijnt er in de console?
+
+17. Wat verschijnt er in de console?
+
+18. Wat verschijnt er in de console?
+
+19. Wat verschijnt er in de console?
+
+20. Wat verschijnt er in de console?
+
+21. Wat verschijnt er in de console?
+
+22. Wanneer produceert een functie een resultaat?
+23. Wat verschijnt er in de console?
+
+24. Wat is het verschil tussen een “function declaration” en “function expression”? Geef in je
+uitleg een codevoorbeeld.
+25. Wat is het verschil tussen een parameter en een argument? Geef in je uitleg een
+codevoorbeeld.
+26. Wat is een “arrow function”?
+27. Waarom het een “arrow function” een “arrow function”?
+28. Wat is het verschil tussen een “arrow function” en een “function declaration”?
+29. Wat verschijnt er in de console?
+
+30. Wat verschijnt er in de console?
+
+31. Wat verschijnt er in de console?
+
+32. Wat verschijnt er in de console?
+
+33. Wat verschijnt er in de console?
+
+34. Wat verschijnt er in de console?
+
+35. Wat is het “Don’t repeat yourself”-principe? Geef een codevoorbeeld bij je antwoord.
+
+36. Wat doet de “return”-keyword?
+
+37. Waarom is deze functie zinloos?
+Omdat er geen variables in zitten.
