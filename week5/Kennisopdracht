@@ -1,0 +1,43 @@
+1. Wat is de “DOM”?
+
+2. Wat is “DOM manipulation”?
+
+3. Wanneer wordt de “DOM” gegenereerd?
+
+4. De “DOM” is onderdeel van de WEB API’s. Wat wordt daarmee bedoeld?
+
+5. Wat doet de ‘querySelector’?
+
+6. Wat is het verschil tussen de ‘querySelector’ en de “querySelectorAll”?
+Voor de vragen 7 tot en met 12 wordt gebruikgemaakt van onderstaande HTML-code.
+
+7. Wat verschijnt er in de console?
+A7
+
+8. Wat verschijnt er in de console?
+A6 is een prachtige snelweg
+
+9. Wat verschijnt er in de console?
+Niks want er komt een error
+
+10. Wat verschijnt er in de console?
+A6 x A6
+
+11. Wat verschijnt er in de console?
+A6 + A6
+
+12. Wat verschijnt er in de console?
+A6 + A6 + A3
+
+13. Wat is een “event”? Geef twee voorbeelden van een “event”?
+Als de pagina met JS laad en als er wordt geklikt op een button
+14. Hoe voeg je een “event” toe aan een HTML-element? Geef een codevoorbeeld bij je uitleg.
+      <script type = "text/javascript">
+         <!--
+            function sayHello() {
+               alert("Hello World")
+            }
+         //-->
+      </script>  
+15. Hoe kan je de stijl van een HTML-element veranderen met Javascript? Geef een
+codevoorbeeld in je antwoord.
