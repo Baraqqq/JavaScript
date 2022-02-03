@@ -1,1 +1,9 @@
-dfd
+Ontwikkelaarsopdrachten
+1. Wat is het verschil tussen ‘innerHTML’ en ‘textContent’ en ‘innerText’?
+2. Maak een “div”-element met class “div-item”. Als je op het element klikt log je naar de
+console het “this-object” (console.log(this)). Wat zien we hier? Is dit altijd hetzelfde?
+
+WISKUNDE OPDRAXHT
+1. Bouw de volgende applicatie na. Bekijk hier wat de eisen zijn de applicatie.
+
+2. Bouw de volgende applicatie na. Bekijk hier wat de eisen zijn de applicatie.
