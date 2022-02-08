@@ -1,11 +1,11 @@
-const age = 12;
-if(true){
-    case age >= 18:
+let age = 18;
+if(true)
+     if (age >= 18)
         console.log("Great!");
-        break;
-    case age >= 12:
+    
+    else if  (age >= 12)
         console.log("Almost great");
-        break;
-    default:
+        
+    
+    else
         console.log("Not great");
-}
