@@ -1,4 +1,5 @@
 1. Schrijf een functie die de huidige leeftijd berekent in jaren en dagen.
+
 function getAge(dateString) {
     var today = new Date();
     var birthDate = new Date(dateString);
