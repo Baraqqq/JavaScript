@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="yahtzee.css" rel="stylesheet" />
+  </head>
+
+  <div class="container">
+    <div class="sheet">
+      <table class="deel deel1">
+        <colgroup>
+          <col span="1" style="width: 36%" />
+          <col span="1" style="width: 23%" />
+          <col span="1" style="width: 1fr" />
+          <col span="1" style="width: 1fr" />
+          <col span="1" style="width: 1fr" />
+          <col span="1" style="width: 1fr" />
+        </colgroup>
+        <tr class="toprow">
+          <th>DEEL 1</th>
+          <th>Puntentelling</th>
+          <th class="fieldPlayer">Speler 1</th>
+          <th class="fieldPlayer">Speler 2</th>
+          <th class="fieldPlayer">Speler 3</th>
+          <th class="fieldPlayer">Speler 4</th>
+        </tr>
+        <tr>
+          <td>ENEN</td>
+          <td>Tel alle enen</td>
+          <td class="field field1"></td>
+          <td class="field field1"></td>
+          <td class="field field1"></td>
+          <td class="field field1"></td>
+        </tr>
+        <tr>
+          <td>TWEEËN</td>
+          <td>Tel alle tweeën</td>
+          <td class="field field2"></td>
+          <td class="field field2"></td>
+          <td class="field field2"></td>
+          <td class="field field2"></td>
+        </tr>
+        <tr>
+          <td>DRIEËN</td>
+          <td>Tel alle drieën</td>
+          <td class="field field3"></td>
+          <td class="field field3"></td>
+          <td class="field field3"></td>
+          <td class="field field3"></td>
+        </tr>
+        <tr>
+          <td>VIEREN</td>
+          <td>Tel alle vieren</td>
+          <td class="field field4"></td>
+          <td class="field field4"></td>
+          <td class="field field4"></td>
+          <td class="field field4"></td>
+        </tr>
+        <tr>
+          <td>VIJVEN</td>
+          <td>Tel alle vijven</td>
+          <td class="field field5"></td>
+          <td class="field field5"></td>
+          <td class="field field5"></td>
+          <td class="field field5"></td>
+        </tr>
+        <tr>
+          <td>ZESSEN</td>
+          <td>Tel alle zessen</td>
+          <td class="field field6"></td>
+          <td class="field field6"></td>
+          <td class="field field6"></td>
+          <td class="field field6"></td>
+        </tr>
+        <tr>
+          <td colspan="2">TOTAAL AANTAL PUNTEN</td>
+          <td class="fieldTotal1">0</td>
+          <td class="fieldTotal1">0</td>
+          <td class="fieldTotal1">0</td>
+          <td class="fieldTotal1">0</td>
+        </tr>
+        <tr>
+          <td>
+            <div>EXTRA BONUS</div>
+            <div class="klein">Bij een puntentotaal van minstens 63</div>
+          </td>
+          <td>35 punten</td>
+          <td class="fieldBonus">0</td>
+          <td class="fieldBonus">0</td>
+          <td class="fieldBonus">0</td>
+          <td class="fieldBonus">0</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div>TOTAAL</div>
+            <div class="klein">Van deel 1</div>
+          </td>
+          <td class="fieldTotal1PlusBonus">0</td>
+          <td class="fieldTotal1PlusBonus">0</td>
+          <td class="fieldTotal1PlusBonus">0</td>
+          <td class="fieldTotal1PlusBonus">0</td>
+        </tr>
+      </table>
+
+      <table class="deel deel2">
+        <colgroup>
+          <col span="1" style="width: 36%" />
+          <col span="1" style="width: 23%" />
+          <col span="1" style="width: 10.25%" />
+          <col span="1" style="width: 10.25%" />
+          <col span="1" style="width: 10.25%" />
+          <col span="1" style="width: 10.25%" />
+        </colgroup>
+        <tr>
+          <th
+            colspan="6"
+            style="border-top: initial; border-bottom: initial"
+          ></th>
+        </tr>
+        <tr>
+          <th colspan="6" style="border-top: initial">DEEL 2</th>
+        </tr>
+        <tr>
+          <td>THREE OF A KIND</td>
+          <td>Totaal v.d. 5 stenen</td>
+          <td class="field field3Same"></td>
+          <td class="field field3Same"></td>
+          <td class="field field3Same"></td>
+          <td class="field field3Same"></td>
+        </tr>
+        <tr>
+          <td>FOUR OF A KIND</td>
+          <td>Totaal v.d. 5 stenen</td>
+          <td class="field field4Same"></td>
+          <td class="field field4Same"></td>
+          <td class="field field4Same"></td>
+          <td class="field field4Same"></td>
+        </tr>
+        <tr>
+          <td>FULL HOUSE</td>
+          <td>25 punten</td>
+          <td class="field fieldFullHouse"></td>
+          <td class="field fieldFullHouse"></td>
+          <td class="field fieldFullHouse"></td>
+          <td class="field fieldFullHouse"></td>
+        </tr>
+        <tr>
+          <td>KLEINE STRAAT</td>
+          <td>30 punten</td>
+          <td class="field fieldSmallStreet"></td>
+          <td class="field fieldSmallStreet"></td>
+          <td class="field fieldSmallStreet"></td>
+          <td class="field fieldSmallStreet"></td>
+        </tr>
+        <tr>
+          <td>GROTE STRAAT</td>
+          <td>40 punten</td>
+          <td class="field fieldBigStreet"></td>
+          <td class="field fieldBigStreet"></td>
+          <td class="field fieldBigStreet"></td>
+          <td class="field fieldBigStreet"></td>
+        </tr>
+        <tr>
+          <td>JAHTZEE</td>
+          <td>50 punten</td>
+          <td class="field fieldYahtzee"></td>
+          <td class="field fieldYahtzee"></td>
+          <td class="field fieldYahtzee"></td>
+          <td class="field fieldYahtzee"></td>
+        </tr>
+        <tr>
+          <td>CHANCE</td>
+          <td>Totaal v.d. 5 stenen</td>
+          <td class="field fieldChance"></td>
+          <td class="field fieldChance"></td>
+          <td class="field fieldChance"></td>
+          <td class="field fieldChance"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div>TOTAAL</div>
+            <div class="klein">Van deel 2</div>
+          </td>
+          <td class="fieldTotal2">0</td>
+          <td class="fieldTotal2">0</td>
+          <td class="fieldTotal2">0</td>
+          <td class="fieldTotal2">0</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div>TOTAAL</div>
+            <div class="klein">Van deel 1</div>
+          </td>
+          <td class="fieldTotal1PlusBonus">0</td>
+          <td class="fieldTotal1PlusBonus">0</td>
+          <td class="fieldTotal1PlusBonus">0</td>
+          <td class="fieldTotal1PlusBonus">0</td>
+        </tr>
+        <tr>
+          <td colspan="2">SUBTOTAAL</td>
+          <td class="fieldTotalAll">0</td>
+          <td class="fieldTotalAll">0</td>
+          <td class="fieldTotalAll">0</td>
+          <td class="fieldTotalAll">0</td>
+        </tr>
+      </table>
+    </div>
+    <div class="dicearea">
+      <div class="diebox"><div class="die" id="dice1"></div></div>
+      <div class="diebox"><div class="die" id="dice2"></div></div>
+      <div class="diebox"><div class="die" id="dice3"></div></div>
+
+      <div class="diebox"><div class="die" id="dice4"></div></div>
+      <div class="diebox"><div class="die" id="dice5"></div></div>
+      <div class="buttonBox">
+        <button class="rollButton">Rol</button>
+        <div class="rollCount"></div>
+      </div>
+    </div>
+    <div class="modal" id="myModal">
+      <div>
+        <div class="modal-content">
+          <h2 class="congrats">Gefeliciteerd!</h2>
+          <h3 class="winners"></h3>
+          <button class="playAgain">Play again</button>
+        </div>
+      </div>
+    </div>
+    <div class="startModal" id="startModal">
+      <div>
+        <div class="start-modal-content">
+          <h1 class="title">Aantal spelers</h1>
+          <button class="one startButton">1</button>
+          <button class="two startButton">2</button>
+          <button class="three startButton">3</button>
+          <button class="four startButton">4</button>
+        </div>
+      </div>
+    </div>
+    <script src="yahtzee.js"></script>
+  </div>
+</html>
