@@ -6,7 +6,6 @@ let diceObj = [
     {currentValue: 0, hold: false}
   ]
   
-  // Score sheet
   let scoreSheet = [
     {
       ones: null,
@@ -171,11 +170,11 @@ let diceObj = [
   function messageDisplay() {
   // 
     if (rollCount === 1) {
-      message.textContent = "2 ROLLS REMAINING";
+      message.textContent = "2 OVERIGE ROLLEN";
     } else if (rollCount === 2) {
-      message.textContent = "1 ROLLS REMAINING";
+      message.textContent = "1 OVERIGE ROLLEN";
     } else if (rollCount === 3) {
-      message.textContent = "ENTER YOUR SCORE";
+      message.textContent = "VOER UW SCORE IN";
     }
   }
   
@@ -209,7 +208,7 @@ let diceObj = [
       diceDisp[i].textContent = "1";
     }
   
-    message.textContent = "PRESS ROLL";
+    message.textContent = "DRUK OM TE ROLLEN";
   
     preRollState();
   }
