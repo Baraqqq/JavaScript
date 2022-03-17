@@ -1,0 +1,8 @@
+
+What is DOM in JavaScript?
+JavaScript can access all the elements in a webpage making use of Document Object Model (DOM). 
+In fact, the web browser creates a DOM of the webpage when the page is loaded. 
+The DOM model is created as a tree of objects like this:
+
+DOM geeft de mogelijkheid aan JavaScript om toegang te krijgen tot elementen in een webpagina.
+
