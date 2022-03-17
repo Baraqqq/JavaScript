@@ -34,7 +34,7 @@ let diceObj = [
     }
   ]
   
-  // Score sheet DOM elements
+
   let onesScoreDisp = document.getElementById('onesScoreDisp');
   let twosScoreDisp = document.getElementById('twosScoreDisp');
   let threesScoreDisp = document.getElementById('threesScoreDisp');
@@ -58,7 +58,7 @@ let diceObj = [
   let scoreCell = document.getElementsByClassName('scoreCell');
   let totalCell = document.getElementsByClassName('totalCell');
   
-  // Dice DOM elements
+
   let diceOneDisp = document.getElementById('diceOneDisp');
   let diceTwoDisp = document.getElementById('diceTwoDisp');
   let diceThreeDisp = document.getElementById('diceThreeDisp');
@@ -67,21 +67,21 @@ let diceObj = [
   let dice = document.getElementsByClassName('dice');
   let diceDisp = document.getElementsByClassName('diceDisp');
   
-  // Button DOM elements
+
   let holdButtons = document.getElementsByClassName('holdButtons');
   let rollButton = document.getElementById('rollButton');
   
-  // Message DOM element
+
   let message = document.getElementById('message');
   
-  // Global variables
+
   let diceValueArray = [];
   let rollCount = 0;
   let scoreSubmitted = true;
   let gameFinished;
   
   function diceRoll() {
-  // Executed when the roll button is clicked.
+
   
     rollCount++;
     scoreSubmitted = false;
@@ -89,8 +89,8 @@ let diceObj = [
       rollingState();
     }
   
-    // Assigns a random number to each dice. If a dice is held, no new number will be assigned.
-    // Pushes the dice values to an array and sorts them numerically. For use in calculating scores.
+
+
     if (rollCount <= 3) {
       diceValueArray = [];
       for (let i = 0; i < diceObj.length; i++) {
@@ -108,15 +108,14 @@ let diceObj = [
       diceFiveDisp.textContent = diceObj[4].currentValue;
     } 
   
-    // Once the max number of rolls is hit, the hold button and roll buttons are disabled.
+
     if (rollCount === 3) {
       for (let i = 0; i < holdButtons.length; i++) {
         holdButtons[i].setAttribute("disabled", "");
       }
   
       rollButton.setAttribute("disabled", "");
-  
-      // If any dice are set to hold on the last roll, the hold class is removed and the hold property is reset.
+
       for (let i = 0; i < dice.length; i++) {
         dice[i].classList.remove('hold');
       }
@@ -129,34 +128,31 @@ let diceObj = [
   }
   
   function rollReset() {
-  // Executed every time a score is inputted to the score sheet via the calculationEnd function. 
-  // Resets the roll count to zero. Displays the correct message.
+
   
     rollCount = 0;
     if (scoreSheet[2].gameGrandTotal !== null) {
-      message.textContent = "WELL PLAYED! YOUR SCORE WAS " + scoreSheet[2].gameGrandTotal;
+      message.textContent = "GOED GEDAAN! Uw score is " + scoreSheet[2].gameGrandTotal;
     } else {
-      message.textContent = "PRESS ROLL";
+      message.textContent = "DRUK OM TE ROLLEN";
     }
   }
   
   function preRollState() {
-  // Executed every time a score is inputted to the score sheet via the calculationEnd function.
-  // Sets everything up for the user's next roll.
+
   
-    // Disable the hold buttons.
+
     for (let i = 0; i < holdButtons.length; i++) {
       holdButtons[i].setAttribute("disabled", "");
     }
-  
-    // Enables the roll button if the game is still active.
+
     if (!gameFinished) {
       rollButton.removeAttribute("disabled", "");
     } else {
       rollButton.setAttribute("disabled", "");
     }
   
-    // Remove's the hold class from any dice and resets the dice hold value.
+
     for (let i = 0; i < dice.length; i++) {
       dice[i].classList.remove('hold');
     }
@@ -166,9 +162,7 @@ let diceObj = [
   }
   
   function rollingState() {
-  // Executed on the first roll of a go via the diceRoll function.
-  
-    // Enables the hold buttons
+
     for (let i = 0; i < holdButtons.length; i++) {
       holdButtons[i].removeAttribute("disabled", "");
     }
@@ -186,24 +180,23 @@ let diceObj = [
   }
   
   function newGame() {
-  // Executed when the user clicks the New Game button.
-  // Reset roll count and set scoreSubmitted to true to stop any scores being entered before the first roll.
+
   
     rollCount = 0;
     gameFinished = false;
     scoreSubmitted = true;
   
-    // Reset the score cells on the HTML score sheet.
+
     for (let i = 0; i < scoreCell.length; i++) {
       scoreCell[i].textContent = "...";
     }
   
-    // Reset the total cells on the HTML score sheet.
+
     for (let i = 0; i < totalCell.length; i++) {
       totalCell[i].textContent = "";
     }
   
-    // Reset the score sheet object.
+
     for (var i = 0; i < scoreSheet.length; i++) {
       for (var prop in scoreSheet[i]) {
         if (scoreSheet[i][prop] !== null) {
@@ -211,8 +204,7 @@ let diceObj = [
         }
       }
     }
-  
-    // Reset the HTML dice to show 1's.
+
     for (let i = 0; i < diceDisp.length; i++) {
       diceDisp[i].textContent = "1";
     }
@@ -222,7 +214,7 @@ let diceObj = [
     preRollState();
   }
   
-  //Toggles the hold functionality and applies a new style class if hold is true.
+
   function toggleHold(key, holdElementId) {
     let clickedElement = document.getElementById(holdElementId);
   
@@ -234,7 +226,7 @@ let diceObj = [
     }
   }
   
-  // Calculates the score, updates the scoreSheet object and HTML.
+
   
   function calculateUpper(argA, argB, argC) {
     if (!scoreSubmitted && argA === null) {
@@ -249,83 +241,6 @@ let diceObj = [
     }
   }
   
-  // function calculateOnes() {
-  //   if (!scoreSubmitted && scoreSheet[0].ones === null) {
-  //     scoreSheet[0].ones = 0;
-  //     diceObj.forEach(item => {
-  //       if (item.currentValue === 1) {
-  //         scoreSheet[0].ones += 1;
-  //       }
-  //     });
-  //   onesScoreDisp.textContent = scoreSheet[0].ones;
-  //   calculationEnd(); 
-  //   }
-  // }
-  
-  // function calculateTwos() {
-  //   if (!scoreSubmitted && scoreSheet[0].twos === null) {
-  //     scoreSheet[0].twos = 0;
-  //     diceObj.forEach(item => {
-  //       if (item.currentValue === 2) {
-  //         scoreSheet[0].twos += 2;
-  //       }
-  //     });
-  //   twosScoreDisp.textContent = scoreSheet[0].twos;
-  //   calculationEnd();
-  //   }
-  // }
-  
-  // function calculateThrees() {
-  //   if (!scoreSubmitted && scoreSheet[0].threes === null) {
-  //     scoreSheet[0].threes = 0;
-  //     diceObj.forEach(item => {
-  //       if (item.currentValue === 3) {
-  //         scoreSheet[0].threes += 3;
-  //       }
-  //     });
-  //   threesScoreDisp.textContent = scoreSheet[0].threes;
-  //   calculationEnd(); 
-  //   }
-  // }
-  
-  // function calculateFours() {
-  //   if (!scoreSubmitted && scoreSheet[0].fours === null) {
-  //     scoreSheet[0].fours = 0;
-  //     diceObj.forEach(item => {
-  //       if (item.currentValue === 4) {
-  //         scoreSheet[0].fours += 4;
-  //       }
-  //     });
-  //   foursScoreDisp.textContent = scoreSheet[0].fours;
-  //   calculationEnd();
-  //   }
-  // }
-  
-  // function calculateFives() {
-  //   if (!scoreSubmitted && scoreSheet[0].fives === null) {
-  //     scoreSheet[0].fives = 0;
-  //     diceObj.forEach(item => {
-  //       if (item.currentValue === 5) {
-  //         scoreSheet[0].fives += 5;
-  //       }
-  //     });  
-  //   fivesScoreDisp.textContent = scoreSheet[0].fives;
-  //   calculationEnd();
-  //   }
-  // }
-  
-  // function calculateSixes() { 
-  //   if (!scoreSubmitted && scoreSheet[0].sixes === null) {
-  //     scoreSheet[0].sixes = 0;
-  //     diceObj.forEach(item => {
-  //       if (item.currentValue === 6) {
-  //         scoreSheet[0].sixes += 6;
-  //       }
-  //     });
-  //   sixesScoreDisp.textContent = scoreSheet[0].sixes;
-  //   calculationEnd();
-  //   }
-  // }
   
   function calculateThreeOfKind() {
     if (!scoreSubmitted && scoreSheet[1].threeOfAKind === null) {
@@ -487,16 +402,15 @@ let diceObj = [
   }
   
   function totals() {
-    // Extract the score sheet values into an array
+
     let upperScoreArray = Object.values(scoreSheet[0]);
     let lowerScoreArray = Object.values(scoreSheet[1]);
   
-    // Check the above arrays for any missing scores
+
     let isScoreMissingUpper = upperScoreArray.includes(null);
     let isScoreMissingLower = lowerScoreArray.includes(null);
     let reducer = (accumulator, current) => accumulator + current;
-  
-    // If all the upper section scores are in, calculate and display the totals 
+
     if (!isScoreMissingUpper) {
       scoreSheet[2].upperTotal = upperScoreArray.reduce(reducer);
       if (scoreSheet[2].upperTotal >= 63) {
@@ -512,13 +426,12 @@ let diceObj = [
       upperGrandTotalDisp2.textContent = scoreSheet[2].upperGrandTotal;
     }
   
-    // If all the lower section scores are in, calculate and display the totals 
+  
     if (!isScoreMissingLower) {
       scoreSheet[2].lowerGrandTotal = lowerScoreArray.reduce(reducer);
       lowerGrandTotalDisp.textContent = scoreSheet[2].lowerGrandTotal;
     }
   
-    // If all of the scores are in, calculate and display the final score
     if (scoreSheet[2].upperGrandTotal !== null && scoreSheet[2].lowerGrandTotal !== null) {
       scoreSheet[2].gameGrandTotal = scoreSheet[2].upperGrandTotal + scoreSheet[2].lowerGrandTotal;
       gameGrandTotalDisp.textContent = scoreSheet[2].gameGrandTotal;
