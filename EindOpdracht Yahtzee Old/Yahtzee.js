@@ -309,41 +309,7 @@ let diceObj = [
     }
   }
   
-  function calculateSmallStraight() {
-    let status = false;
-    let possibleSmallStraights = [
-    [1,1,2,3,4],
-    [1,2,2,3,4],
-    [1,2,3,3,4],
-    [1,2,3,4,4],
-    [1,2,3,4,5],
-    [1,2,3,4,6],
-    [2,2,3,4,5],
-    [2,3,3,4,5],
-    [2,3,4,4,5],
-    [2,3,4,5,5],
-    [1,3,4,5,6],
-    [2,3,4,5,6],
-    [3,3,4,5,6],
-    [3,4,4,5,6],
-    [3,4,5,5,6],
-    [3,4,5,6,6]
-    ];
-    if (!scoreSubmitted && scoreSheet[1].smallStraight === null) {
-      for (let i = 0; i < possibleSmallStraights.length; i++) {
-        if (JSON.stringify(diceValueArray) === JSON.stringify(possibleSmallStraights[i])) {
-          status = true;
-        }
-      }
-      if (status === true) {
-        scoreSheet[1].smallStraight = 30;
-      } else {
-        scoreSheet[1].smallStraight = 0;
-      }
-      smallStraightScoreDisp.textContent = scoreSheet[1].smallStraight;
-      calculationEnd();
-    }
-  }
+
   
   function calculateLargeStraight() {
     let status = false;
